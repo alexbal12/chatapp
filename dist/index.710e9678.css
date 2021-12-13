@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.root {
+  margin: 0 auto;
+  max-width: 312px;
+}
+
+/*# sourceMappingURL=index.710e9678.css.map */
