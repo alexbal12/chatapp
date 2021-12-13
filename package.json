@@ -1,0 +1,14 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch './index.ts' --exec 'ts-node index.ts'",
+    "build": "tsc index.ts",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "typescript": "^4.5.3"
+  }
+}
