@@ -1,16 +1,16 @@
 {
   "name": "chatapp",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "source": "src/index.html",
   "type": "commonjs",
   "scripts": {
     "dev:front": "parcel",
     "build:front": "parcel build",
-    "dev:back": "nodemon --watch '.server/index.ts' --exec 'ts-node server/index.ts'",
-    "build": "tsc",
-    "start": "node ./server/index.js"
+    "dev:back": "nodemon --watch './index.ts' --exec 'ts-node index.ts'",
+    "build:api": "tsc",
+    "build": "yarn build:front && yarn build:api",
+    "start": "node ./index.js"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.4",
