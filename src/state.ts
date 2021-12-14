@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://dwf-m6-chatapp.herokuapp.com";
 import { rtdb } from "./rtdb";
 import map from "lodash/map";
 const state = {

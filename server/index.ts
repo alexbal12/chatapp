@@ -2,6 +2,7 @@ import * as express from "express";
 import { firestore, rtdb } from "./db";
 import { nanoid } from "nanoid";
 import * as cors from "cors";
+import { appCheck } from "firebase-admin";
 
 (function () {
   const port = process.env.PORT || 3000;
@@ -119,6 +120,9 @@ import * as cors from "cors";
     chatRoomRef.push(req.body, function () {
       res.json("todo ok");
     });
+  });
+  app.get("*", (req, res) => {
+    res.sendFile(__dirname + "/src/index.html");
   });
   app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
